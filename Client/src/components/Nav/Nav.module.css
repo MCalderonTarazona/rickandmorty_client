@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #113408;
+    height: 50px;
+    padding: 5px 2%;
+    font-family: 'Delicious Handrawn';
+    border-bottom: 1px solid #69ff4b;
+    box-shadow: 0px 5px 10px rgba(105,255,75,1.5);
+
+}
+
+.containerNav img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.menuNavContainer {
+    display: flex;
+}
+
+.menuNav {
+    padding: 0px 60px 0px 0px;
+    color: #5fe03f;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.menuNav:hover {
+    transform: scale(1.1);
+}
+
+.logoutNav {
+    color: #69ff4b;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.hamburgerNav {
+    color: #69ff4b;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .menuNavContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #113408;
+        color: #5fe03f;
+        position: absolute;
+        z-index: 10000;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: 0.5s;
+    }
+
+    .menuNavContainerActive {
+        left: 0;
+    }
+
+    .hamburgerNav {
+        display: block;
+    }
+
+    .logoutNav {
+        display: none;
+    }
+
+}

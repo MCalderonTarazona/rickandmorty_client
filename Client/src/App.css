@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.App {
+   text-align: center;
+}
+
+.modalDiv {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(91, 112, 131, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  border: 2px solid #5fe03f;
+  border-radius: 2%;
+  background: #113408;
+  font-family: 'Delicious Handrawn';
+  color: #5fe03f;
+  width: 400px;
+  height: 480px;
+}
+
+.modal img {
+  border: 2px solid #69ff4b;
+  width: 40%;
+  border-radius: 100%;
+}
+
+.modal h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.btnClose {
+  color: #69ff4b;
+  font-size: 40px;
+  transform: translateY(-10px) translateX(184px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .modal {
+    width: 250px;
+    height: 400px;
+  }
+  .btnClose {
+    transform: translateY(-34px) translateX(109px);
+  }
+  .modal h2 {
+    font-size: 18px;
+  }
+}

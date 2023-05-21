@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+
+
+.containerCard {
+    border: 2px solid #5fe03f;
+    border-radius: 2%;
+    background: #113408;
+    opacity: 0.9; 
+    padding: 1em;
+    margin: 3%;
+    color: #69ff4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Delicious Handrawn';
+    width: 305px;
+    height: 250px;
+}
+
+.containerCard img {
+    border: 2px solid #69ff4b;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: -145px;
+}
+
+.containerCard img {
+  border: 2px solid #5fe03f;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-top: -250px;
+}
+
+.containerCard:hover {
+    background-color: #4c9141;
+    transform: scale(1.1);
+    color: #69ff4b;
+}
+
+.btnFavoritesOn {
+  color: #69ff4b;
+  font-size: 35px;
+  transform: translateY(10px) translateX(60px);
+  cursor: pointer;
+}
+
+.btnFavoritesOff {
+  color: #b7b7b7;
+  font-size: 35px;
+  transform: translateY(10px) translateX(60px);
+  cursor: pointer;
+}
+
+.btnClose {
+  color: #69ff4b;
+  font-size: 40px;
+  transform: translateY(-25px) translateX(152px);
+  cursor: pointer;
+}
+
+.btnCloseFav {
+  font-size: 40px;
+}
+
+.cardId {
+  transform: translateY(-110px) translateX(-130px);
+  font-size: 40px;
+}
+
+.cardLink {
+  color: #69ff4b;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .containerCard {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .containerCard {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+
+  .btnClose {
+    transform: translateY(-25px) translateX(102px);
+  }
+
+  .btnFavoritesOn {
+    transform: translateY(-35px) translateX(55px);
+  }
+  
+  .btnFavoritesOff {
+    transform: translateY(-35px) translateX(55px);
+  }
+  
+  .cardId {
+    transform: translateY(-130px) translateX(-90px);
+  }
+  
+}

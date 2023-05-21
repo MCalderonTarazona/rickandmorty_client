@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.containerSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Delicious Handrawn';
+}
+
+.containerSearch {
+    color: #5fe03f;
+    font-size: 30px;
+}
+
+.containerSearchElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxSearch{
+    position: relative;
+}
+
+.boxSearch input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: #113408;
+    border: 4px solid #5fe03f;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Delicious Handrawn';
+    font-size: 45px;
+    color: #113408;
+    outline: none;
+    transition: .5s;
+}
+
+.boxSearch:hover input{
+    width: 350px;
+    background: #4c9141;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.9;
+    color: #5fe03f;
+}
+
+.glassSearch {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #5fe03f;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.randomSearch {
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.randomSearch:hover {
+    background: #113408;
+    box-shadow: 0 0 10px #5fe03f;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .boxSearch input {
+        width: 200px;
+        height: 70px;
+        background: #4c9141;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .boxSearch:hover input{
+        width: 200px;
+        height: 70px;
+        background: #4c9141;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .randomSearch {
+        background: #113408;
+        box-shadow: 0 0 10px #5fe03f;
+        border-radius: 50%;
+    }
+
+    .randomSearch:hover {
+        background: #113408;
+        box-shadow: 0 0 10px #5fe03f;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
